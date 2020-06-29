@@ -28,6 +28,8 @@ class Form {
       player.index = playerCount;
       player.update();
       player.updateCount(playerCount);
+      if(playerCount == 4)
+        game.update(1);
       this.greeting.html("Hello " + player.name)
       this.greeting.position(displayWidth/2 - 70, displayHeight/4);
     });
